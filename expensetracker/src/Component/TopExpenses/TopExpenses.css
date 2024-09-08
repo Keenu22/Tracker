@@ -1,0 +1,12 @@
+.expensechart{
+  height:100px;
+  background-color:#FFFFFF;
+  border-radius:0.75rem;
+  width:550px;
+  height:400px;
+}
+@media (max-width: 768px) {
+  .expensechart {
+    width: 400px;
+  }
+}

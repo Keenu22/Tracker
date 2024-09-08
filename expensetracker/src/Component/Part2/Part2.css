@@ -1,0 +1,14 @@
+.part2{
+  display:flex;
+  gap:15px;
+}
+@media (max-width: 768px) {
+  .part2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .part2{
+    flex-direction: column;
+  }
+}

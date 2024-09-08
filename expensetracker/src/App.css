@@ -1,0 +1,47 @@
+
+.App {
+  text-align: center;
+  background-color: #3B3B3B;
+  /* Default background color */
+  width: 100%;
+  /* Ensure it covers the full viewport height */
+  position: relative;
+  /* Positioning for pseudo-element */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+}
+
+.blur::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent overlay */
+  backdrop-filter: blur(5px);
+  /* Apply blur effect */
+  z-index: 2;
+  /* Ensure it is behind the content */
+}
+
+
+/* Breakpoint for medium screens (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .App {
+    background-color: #3B3B3B;
+    width: 100%;
+    /* Adjust for medium screens */
+  }
+}
+
+/* Breakpoint for small screens (below 768px) */
+@media (max-width: 768px) {
+  .App {
+    background-color: #3B3B3B;
+    width:100%;
+    /* Adjust for small screens */
+  }
+}
+
